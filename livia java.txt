@@ -1,0 +1,176 @@
+Exercicio 1
+// let numero = parseInt(prompt('Digite um numero'));
+// if (numero % 2 === 0){
+//     alert('O numero é par');
+// } else {
+//     alert(' O numero é impar')
+// }
+
+
+
+
+
+// Exercicio 2
+// let idade = prompt ('Digite sua idade')
+
+// if (idade < 11){
+//     alert('Você é criança')
+// }
+// else if (idade > 12 && idade< 18){
+// alert('Voce é adolescente')
+// } else if (idade > 18  && idade < 60){
+//     alert('Voce é um adulto')
+// } else if (idade> 60){
+//     alert('Voce é idoso')
+// }
+
+
+
+
+
+// Exercicio 3
+// let numero = prompt("Digite um numero");
+
+// if(numero %2 === 0) {
+// let par = numero / 2;
+// alert("Sua conta tem:" + par)    
+// }
+//  
+// else{
+//     let par = numero - 1
+//     let par2 = par / 2
+//     alert("Sua conta tem: " + par2 )
+// }
+
+
+
+
+
+// Exercicio 4 
+// let operaçoes = prompt("Esolha: Soma, Subtração, Multiplicação ou Divisão")
+// let valor1 = parseFloat(prompt("VALOR 1"))
+// let valor2 = parseFloat(prompt("VALOR 2"))
+
+// switch(operaçoes){
+// case"Soma":
+// final = valor1 + valor2
+// alert("Resultado: " + final);
+// break;
+
+// case"Subtração":
+// final2 = valor1 - valor2
+// alert("Resultado: " + final2)
+// break;
+
+// case"Mutiplicação":
+// final3 = valor1 * valor2
+// alert("Resultado: " + final3)
+// break;
+
+// case"Divisão":
+// final4 = valor1 / valor2
+// alert("Resultado: " + final4)
+// break;
+// }
+
+
+
+
+
+
+// Exercicio 5
+// let numero = parseInt (prompt ("Digite um número para a tabela de multiplicação:"));
+// let limite = parseInt (prompt ("Digite o limite da tabela de multiplicação:"));
+
+// if (isNaN (numero) || isNaN(limite)) {
+// alert ("Por favor, digite números válidos. ");
+// } else {
+// // Gerar e exibir a tabela de multiplicação
+// console.log("Tabela de multiplicação do "+ numero +" até " + limite +":");}
+// for (let i = 1; i <= limite; i++) {
+// let resultado = numero * i;
+// console. log (numero + "x" + i + "=" + resultado); }
+
+
+
+
+
+// Exercicio 6
+// let numero = parseInt(prompt("Digite um número para verificar se é  um numero primo:"));
+
+// if (numero > 1 && Number.isInteger(numero)) {
+//     let isPrimo = true;
+
+//     for (let i = 2; i <= Math.sqrt(numero); i++) {
+//         if (numero % i === 0) {
+//             isPrimo = false;
+//             break;
+//         }
+//     }
+//     switch (isPrimo) {
+//         case true:
+//             alert(numero + " é um número primo.");
+//             break;
+//         case false:
+//             alert(numero + " não é um número primo.");
+//             break;
+//     }
+// } else {
+//     alert("Por favor, insira um número inteiro positivo maior que 1.");
+// }
+
+
+
+
+// Exercicio 7
+// for(let i= prompt('Digite um número para a contagem regressiva:', 'Insira um número de 1 - 1000'); i<=1000;i--){
+//         if(i===1000){
+//             break;
+//         }
+//         alert(i)
+//     }
+   
+
+
+
+// Exercicio 8:
+// let nota = prompt('Insira sua nota e descubra sua classificação. ', 'Insira sua nota aqui.')
+
+// if (nota >= 0 && nota <= 10) {
+//     alert('Voce atingiu a nota F');
+// }
+// if (nota > 10 && nota <= 30) {
+//     alert('Voce atingiu a nota E');
+// }
+// if (nota > 30 && nota <= 50) {
+//     alert('Voce atingiu a nota D');
+// }
+// if (nota > 50 && nota <= 70) {
+//     alert('Voce atingiu a nota C');
+// }
+// if (nota > 70 && nota <= 90) {
+//     alert('Voce atingiu a nota B');
+// }
+// if (nota > 90 && nota <= 100) {
+//     alert('Voce atingiu a nota A');
+// }
+
+
+
+
+//  Exercicio 9 
+// let numero = parseInt(prompt("Digite um número:"));
+
+// if (!isNaN(numero) && numero > 0) {
+//     for (let i = 1; i <= numero; i++) {
+//         let linha = '';
+
+//         for (let j = 1; j <= i; j++) {
+//             linha += '*';
+//         }
+
+//         console.log(linha);
+//     }
+// } else {
+//     console.log("Por favor, insira um número maior que 0.");
+// }

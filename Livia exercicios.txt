@@ -1,0 +1,79 @@
+exercicio1
+let numero = parseInt (prompt ("Digite um número para a tabela de multiplicação:"));
+let limite = parseInt (prompt ("Digite o limite da tabela de multiplicação:"));
+
+if (isNaN (numero) || isNaN(limite)) {
+alert ("Por favor, digite números válidos. ");
+} else {
+alert("Tabela de multiplicação do "+ numero +" até " + limite +":");}
+for (let i = 1; i <= limite; i++) {
+let resultado = numero * i;
+alert (numero + "x" + i + "=" + resultado); }
+
+
+
+
+exercicio2
+let nomemaisvelho;
+let idademaisvelho = -Infinity;
+
+for(let i = 0; i <5; i++){
+    let nome = prompt("Digite o nome da "+ (i+1) + "ª pessoa:");
+    let idade = parseInt(prompt("Digite a idade da " + (i+1) + "ª pessoa:"));
+
+    if (idade > idademaisvelho){
+        idademaisvelho = idade;
+        nomemaisvelho = nome;
+    }
+}
+alert ("A pessoa mais velha é: " + nomemaisvelho);
+
+
+exercicio3
+
+let numero;
+do{
+    numero =  parseInt(prompt("Digite um numero inteiro positivo: "));
+}while(isNaN(numero) || numero <= 0);
+if (numero % 2 == 0){
+    alert ("O numero "+ numero +" é par.");
+}else{
+    alert("O numero "+ numero+" é impar.");
+}
+
+
+
+
+exercicio4
+let soma = 0;
+let media = 0;
+
+for (let i =1; i <=10; i++){
+let num = Math.floor(Math.random()* 100) +1;
+soma += num;
+}
+
+media =soma /10;
+
+alert("A média dos 10 números aleatórios gerados é: "+ media.toFixed(2));
+
+
+
+exercicio5
+
+let palavra = prompt("Digite uma palavra: ");
+let tam = palavra.length;
+let i = 0;
+let palindromo = true;
+while (i < tam / 2){
+    if (palavra[i] !== palavra[tam - i - 1]){
+        palindromo = false;
+        break;
+    }
+    i++;
+}
+if (palindromo){
+    alert(palavra + " é um palindromo!")
+}else{
+    alert(palavra + " não é um palindromo!")
+}

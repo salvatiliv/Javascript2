@@ -1,0 +1,593 @@
+*{
+	margin: 0;
+}
+/* Estilo para o menu */
+.Nav {
+	position: absolute;
+	background-color: #000000;
+	width: 100%;
+	height: 13%;
+
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav li {
+	float: left;
+}
+nav li a {
+	display: block;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 80%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+nav li a:hover {
+	background-color: #000000;
+}
+.nikeimg1 img{
+	position: absolute;
+	width: 23%;
+	left: 39%;
+	top: -5.6%;
+	height: 25%;
+}
+.abcde h2{
+	position: absolute;
+	top:50%;
+}
+
+/* Estilo para o botão de Login */
+nav li.login {
+	position: absolute;
+	float: right;
+	left: 10%;
+	top: 16%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 150%;
+}
+
+
+
+/* Estilo para a janela modal de Login */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+	background-color: #000000;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #ffffff;
+	width: 20%;
+	height: 48%;
+	margin-top: 10%;
+	box-shadow: 1px 1px 10px 1px color rgb(0, 0, 0);
+	border-radius: 23px;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.ip img{
+	position: absolute;
+	top: 500%;
+}
+
+#username{
+	position: absolute;
+	top: 45%;
+	left: 42.5%;
+	background-color: #ffffff;
+	width: 14%;
+	height: 4%;
+	border-style: none;
+	box-shadow:1px 1px 10px 1px #fdfdfd;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	
+}
+#email{
+	position: absolute;
+	top: 42%;
+	left: 42.5%;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:120%;
+	
+}
+#password{
+	position: absolute;
+	top: 55%;
+	left: 42.5%;
+	background-color: rgb(252, 252, 252);
+	width: 14%;
+	height: 4%;
+	border-style: none;
+	box-shadow:1px 1px 10px 1px #fdfdfd;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	
+	
+}
+#senha{
+	position: absolute;
+	top: 52%;
+	left: 42.5%;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:120%;
+}
+
+.modal-content p{
+	position: absolute;
+	color: #ffffff;
+	top: 60.2%;
+	left: 42.6%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 82%;
+
+	
+}
+.modal-content a{
+	color: red;
+}
+.modal-content img{
+	position: absolute;
+	width: 25%;
+	left: 26%;
+	margin-top: -3%;
+	
+	
+}
+
+.jordan img{
+	position: absolute;
+	left: 40.5%;
+	width: 18%;
+	top: 27%;
+}
+
+
+button {
+	position: absolute;
+	width: 5%;
+	height: 4%;
+	left:47%;
+	top: 64%;
+	box-shadow:1px 1px 10px 1px #fdfdfd;
+	border-radius: 20px;
+	
+}
+.modal-content span{
+	color: rgb(255, 255, 255);
+}
+
+
+
+
+
+.container img{
+	position: absolute;
+width: 38%;
+height: 70%;
+top: 173%;
+left: 30%;
+}
+.gallery img{
+	position: absolute;
+top: 18%;
+width: 30%;
+height: 70%;
+top: 173%;
+background-color:black;
+opacity: 8465%;
+
+
+}
+.ultima img{
+	position: absolute;
+left: 68%;
+top: 173%;
+width: 32%;
+height: 70% ;
+}
+
+.ip img{
+	
+	position: absolute;
+top: 259%;
+width:50%;
+height: 90%;
+left: 12%;
+}
+
+
+
+.testo h1{
+	position: absolute;
+	top: 240%;
+	left: 10%;
+	color: #000000;
+	font-size: 550%;
+	font-family: Rock salt;
+width: 60%;
+	
+	
+	}
+	
+
+
+
+.nike img{
+position: absolute;
+top: 259%;
+width:50%;
+height: 90%;
+left: 12%;
+
+
+}
+
+.dois {
+position: absolute;
+background-color: #000000;
+width: 100%;
+height: 10%;
+top: 163%;
+
+
+
+}
+
+
+.testinho H1 {
+position: absolute;
+left: 45%;
+top: 333%;
+font-family: Rock Salt;
+font-size: 550%;
+color: #000000;
+
+
+}
+
+.laranja img{
+position: absolute;
+top: 325%;
+width: 30%;
+height: 40%;
+left: 30%;
+
+
+
+
+}
+
+.pelicula {
+position: absolute;
+left: 60%;
+background-color: rgb(241, 214, 219);
+opacity: 55%;
+top: 265%;
+width: 30%;
+height: 40%;
+
+
+
+}
+
+.Imigem img{
+position: absolute;
+width: 30%;
+height: 40%;
+left: 60%;
+top: 265%;
+box-shadow: 0px 15px 35px;
+
+
+
+}
+
+.niqui h1 {
+position: absolute;
+color: #000000;
+left: 61%;
+top: 272%;
+font-family: Rock Salt;
+font-size: 190%;
+width: 30%;
+
+}
+
+.linha {
+	position: absolute;
+	width: 36%;
+	height: 1%;
+background-color: orange;
+top: 168%;
+left: 02%;
+}
+
+.linhas{
+	position: absolute;
+	width: 36%;
+	height: 1%;
+background-color: orange;
+top: 168%;
+left: 62%;
+}
+
+
+
+.texto h1{
+	position: absolute;
+	top: 165%;
+	left: 42%;
+	color: white;
+	font-size: 290%;
+font-family: Arial, Helvetica, sans-serif;
+
+
+
+}
+
+
+.pele {
+position: absolute;
+background-color: #000000;
+width: 100%;
+height: 155%;
+opacity: 64%;
+top: 10%;
+
+
+
+}
+
+.porte img{
+position: absolute;
+left: 31%;
+height: 40%;
+width: 40%;
+top: 60%;
+
+
+
+}
+
+.final {
+position: absolute;
+top: 360%;
+width: 100%;
+height: 315%;
+background-color: #000000;
+
+
+
+
+}
+
+
+#mensagem{
+	position: absolute;
+	top: 260%;
+	background-color: #ffffff;
+	font-family: Rock Salt; 
+	font-size: 310%;
+	left: 10%;
+
+}
+
+#mensagem img{
+	position: absolute;
+	
+    top: 1%;
+} 
+.ip img{
+	position: absolute;
+	left: 28%;
+}
+
+  /* Dia 23/08 */
+
+.one img{
+	position: absolute;
+	top: 372%;
+	left: 41%;
+	height: 20%;
+}
+
+.ori img {
+position: absolute;
+left: 45%;
+top: 412%;
+
+
+}
+
+.aa img {
+position: absolute;
+top: 447%;
+left: 42%;
+
+
+}
+
+.igui img{
+position: absolute;
+left: 53%;
+top: 444%;
+
+
+
+
+}
+
+.sorria img{
+position: absolute;
+top: 460%;
+width: 100%;
+height: 90%;
+opacity: 77%;
+
+}
+
+.joje img{
+position: absolute;
+left: 8%;
+top: 562%;
+width: 19%;
+height: 30%;
+
+
+
+}
+
+.segunda img {
+	position: absolute;
+	left: 40%;
+	top: 562%;
+	width: 19%;
+	height: 30%;
+	
+
+
+}
+
+.terceira img {
+position: absolute;
+left: 70%;
+	top: 562%;
+	width: 19%;
+	height: 30%;
+	
+
+}
+
+.terceira h1 {
+	position: absolute;
+	left: 8%;
+	top: 595%;
+	color: white;
+font-size: 87%;
+
+}
+
+
+.segunda h1{
+position:absolute ;
+left: 40%;
+	top: 595%;
+	color: white;
+font-size: 87%;
+
+
+
+}
+
+
+.mateusgay h1 {
+	position:absolute ;
+	left: 70%;
+		top: 595%;
+		color: white;
+	font-size: 87%;
+
+
+
+}
+
+.mateusgay img{
+position: absolute;
+left: 37%;
+		top: 615%;
+	width: 26%;
+	height: 30%;
+
+
+
+}
+
+.agaum h1 {
+	position:absolute ;
+	left: 37%;
+		top: 647%;
+		color: white;
+	font-size: 87%;
+
+
+
+}
+
+.imgg img {
+position: absolute;
+width: 100%;
+top: 549%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

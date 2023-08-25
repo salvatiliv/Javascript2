@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Estoque</h1>
+        
+        <label for="item">Novo item:</label>
+        <input type="text" id="item">
+        <button onclick="adicionarItem()">Adicionar</button>
+        
+        <label for="itemRemover">Item a ser removido:</label>
+        <input type="text" id="itemRemover">
+        <button onclick="removerItem()">Remover</button>
+        
+        <button onclick="mostrarEstoque()">Mostrar Estoque</button>
+        
+        <div id="output"></div>
+        
+        <script>
+            let estoque = [];
+            let outputDiv = document.getElementById("output");
+    
+            function adicionarItem() {
+                let novoItem = document.getElementById("item").value;
+                estoque.push(novoItem);
+                outputDiv.innerHTML = "Item adicionado ao estoque: " + novoItem;
+            }
+    
+            function removerItem() {
+                let itemRemover = document.getElementById("itemRemover").value;
+                let index = estoque.indexOf(itemRemover);
+    
+                if (index !== -1) {
+                    estoque.splice(index, 1);
+                    outputDiv.innerHTML = "Item removido do estoque: " + itemRemover;
+                } else {
+                    outputDiv.innerHTML = "Item não encontrado no estoque.";
+                }
+            }
+    
+            function mostrarEstoque() {
+                if (estoque.length === 0) {
+                    outputDiv.innerHTML = "O estoque está vazio.";
+                } else {
+                    let listaItens = "Itens no estoque:<br>";
+                    for (let i = 0; i < estoque.length; i++) {
+                        listaItens += (i + 1) + ". " + estoque[i] + "<br>";
+                    }
+                    outputDiv.innerHTML = listaItens;
+                }
+            }
+        </script>
+ 
+</body>
+</html>

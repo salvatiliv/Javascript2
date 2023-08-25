@@ -1,0 +1,88 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+<link rel="stylesheet" type="text/css" href="idade.css">
+</head>
+<div class="ima">
+    <img src="unnamed (1).jpg">
+</div>
+<body>
+    <h1>Verificador de idade</h1>
+
+    <div id="Um">
+        <input type="number" id="num1">
+    </div>
+
+    <button onclick="verificarIdade()">Verificador</button>
+
+    <p id="result"></p>
+
+    <script>
+        function verificarIdade() {
+            var num1Val = parseFloat(num1.value);
+            var result = document.getElementById('result');
+
+            if (num1Val >= 18) {
+                result.textContent = 'Você é maior de idade';
+            } else if (num1Val >= 0) {
+                result.textContent = 'Você é menor de idade';
+            } else {
+                result.textContent = 'Idade inválida';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+CSS
+
+h1{
+    position: absolute;
+    text-align: center;
+border-radius: 28px;
+left: 43%;
+
+}
+body{
+    text-align: center;
+
+}
+
+#num1{
+    position: absolute;
+    top: 14%;
+border-radius: 32px;
+left: 46%;
+top: 11%;
+}
+
+button{
+position: absolute;
+border-radius: 32px;
+top: 14%;
+left: 48.6%;
+}
+
+p{
+    position: absolute;
+    top: 15%;
+    left: 47%;
+}
+.ima img{
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    height: 70%;
+    width: 60%;
+}
