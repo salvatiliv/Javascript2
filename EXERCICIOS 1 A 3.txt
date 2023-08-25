@@ -1,0 +1,186 @@
+EXERCICIO 1
+
+// let lista = [];
+// function adicionarItem() {
+//     let novoItem = prompt("Digite o nome da nova compra:");
+//     lista.push(novoItem);
+//     alert("Item adicionado à sua lista: " + novoItem);
+// }
+// function exibirEstoque() {
+//     if (lista.length === 0) {
+//         alert("A lista está vazia.");
+//         return;
+//      }
+//       let listaItens = "Itens na lista:\n";
+//        lista.forEach(function (item, index) {
+//         listaItens += index + ": " + item + "\n";
+//      });
+//      alert(listaItens);
+//      }
+//       while (true) {
+//         let opcao = prompt("Maria, escolha uma opção:\n1. Adicionar item\n2. Ver a lista");
+//         switch (opcao) {
+//              case "1":
+//                  adicionarItem();
+//                   break;
+//                   case "2":
+//                     exibirEstoque();
+//                      break;
+//                      default:
+//                          alert("Opção inválida.");
+//                          }
+//                          }
+
+
+
+
+
+
+EXERCICIO 2 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let planejamento = {
+    domingo: [],
+    segunda: [],
+    terça: [],
+    quarta: [],
+    quinta: [],
+    sexta: [],
+    sábado: []
+};
+
+let week = ["segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo"];
+
+while (true) {
+ 
+    let opcao = prompt("Escolha uma opção:\n1. Adicionar evento;\n2. Ver eventos por dia;\n3. Ver todos os compromissos;\n4. Sair");
+
+    switch (opcao) {
+        case "1":
+       
+            let diaEscolhido = prompt("Escolha o dia que você deseja planejar:\n1. Domingo;\n2. Segunda-feira;\n3. Terça-feira;\n4. Quarta-feira;\n5. Quinta-feira;\n6. Sexta-feira;\n7. Sábado;");
+          
+            let compromisso = prompt(`Digite um evento para ${week[parseInt(diaEscolhido) - 1]}:`);
+       
+            planejamento[week[parseInt(diaEscolhido) - 1]].push(compromisso);
+      
+            alert(`Você adicionou '${compromisso}' para ${week[parseInt(diaEscolhido) - 1]}`);
+            break;
+        case "2":
+     
+            let diaMostrar = prompt("Escolha o dia que você deseja ver:\n1. Domingo;\n2. Segunda-feira;\n3. Terça-feira;\n4. Quarta-feira;\n5. Quinta-feira;\n6. Sexta-feira;\n7. Sábado;");
+       
+            let eventosDia = planejamento[week[parseInt(diaMostrar) - 1]];
+           
+            let mensagemDia = eventosDia.length > 0 ? `Eventos em ${week[parseInt(diaMostrar) - 1]}: ${eventosDia.join(", ")}` : `Nenhum evento registrado em ${week[parseInt(diaMostrar) - 1]}.`;
+          
+            alert(mensagemDia);
+            break;
+        case "3":
+            
+            let todosCompromissos = "";
+        
+            for (let dia in planejamento) {
+                
+                if (planejamento[dia].length > 0) {
+                   
+                    todosCompromissos += `${week.indexOf(dia) + 1}. ${dia}: ${planejamento[dia].join(", ")}\n`;
+                }
+            }
+         
+            if (todosCompromissos !== "") {
+                alert("Compromissos em cada dia:\n" + todosCompromissos);
+            } else {
+                alert("Nenhum compromisso registrado.");
+            }
+            break;
+        case "4":
+           
+            alert("Encerrando o planejamento.");
+            break;
+        default:
+          
+            alert("Opção inválida.");
+    }
+
+    if (opcao === "4") {
+        break;
+    }
+}
+
+</script>
+</body>
+
+</html>
+
+EXERCICIO 3 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="index.js"></script>
+       
+    <h1>Livros da Ana</h1>
+    
+    <label for="item">Novo Livro:</label>
+    <input type="text" id="item">
+    <button onclick="adicionarItem()">Adicionar</button>
+    
+
+    
+    <button onclick="mostrarEstoque()">Mostrar Lista de Livro</button>
+    
+    <div id="output"></div>
+    
+    <script>
+        let estoque = [];
+        let outputDiv = document.getElementById("output");
+
+        function adicionarItem() {
+            let novoItem = document.getElementById("item").value;
+            estoque.push(novoItem);
+            outputDiv.innerHTML = "Livro adicionado a Lista: " + novoItem;
+        }
+
+        function removerItem() {
+            let itemRemover = document.getElementById("itemRemover").value;
+            let index = estoque.indexOf(itemRemover);
+
+            if (index !== -1) {
+                estoque.splice(index, 1);
+                outputDiv.innerHTML = "Livro removido da Lista: " + itemRemover;
+            } else {
+                outputDiv.innerHTML = "Livro não encontrado na lista.";
+            }
+        }
+
+        function mostrarEstoque() {
+            if (estoque.length === 0) {
+                outputDiv.innerHTML = "A lista está vazia.";
+            } else {
+                let listaItens = "Livros na Lista:<br>";
+                for (let i = 0; i < estoque.length; i++) {
+                    listaItens += (i + 1) + ". " + estoque[i] + "<br>";
+                }
+                outputDiv.innerHTML = listaItens;
+            }
+        }
+    </script>
+
+</body>
+</html>
+
