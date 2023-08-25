@@ -1,59 +1,561 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<title>Exemplo de Menu</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="menu.css">
+	<link rel="stylesheet" href="ampliar.css">
+	<link rel="stylesheet" href="ampliar2.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">     
+
 </head>
+
 <body>
-        <h1>Estoque</h1>
-        
-        <label for="item">Novo item:</label>
-        <input type="text" id="item">
-        <button onclick="adicionarItem()">Adicionar</button>
-        
-        <label for="itemRemover">Item a ser removido:</label>
-        <input type="text" id="itemRemover">
-        <button onclick="removerItem()">Remover</button>
-        
-        <button onclick="mostrarEstoque()">Mostrar Estoque</button>
-        
-        <div id="output"></div>
-        
-        <script>
-            let estoque = [];
-            let outputDiv = document.getElementById("output");
-    
-            function adicionarItem() {
-                let novoItem = document.getElementById("item").value;
-                estoque.push(novoItem);
-                outputDiv.innerHTML = "Item adicionado ao estoque: " + novoItem;
-            }
-    
-            function removerItem() {
-                let itemRemover = document.getElementById("itemRemover").value;
-                let index = estoque.indexOf(itemRemover);
-    
-                if (index !== -1) {
-                    estoque.splice(index, 1);
-                    outputDiv.innerHTML = "Item removido do estoque: " + itemRemover;
-                } else {
-                    outputDiv.innerHTML = "Item não encontrado no estoque.";
-                }
-            }
-    
-            function mostrarEstoque() {
-                if (estoque.length === 0) {
-                    outputDiv.innerHTML = "O estoque está vazio.";
-                } else {
-                    let listaItens = "Itens no estoque:<br>";
-                    for (let i = 0; i < estoque.length; i++) {
-                        listaItens += (i + 1) + ". " + estoque[i] + "<br>";
-                    }
-                    outputDiv.innerHTML = listaItens;
-                }
-            }
-        </script>
+	<div class="Nav">
+		<nav>
+			<li class="login"><a href="#" id="login-link">Login</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- Janela modal de Login -->
+	<div id="login-modal" class="modal">
+	    <div class="modal-content">
+			<span class="close">&times;</span>
+
+			<div class="psp">
+			</div>
+			<form>
+				<label for="username" id="email">Email</label>
+				<input type="text" id="username" name="username">
+				<label for="password" id="senha">Senha</label>
+				<input type="password" id="password" name="password">
+				<button type="submit">Entrar</button>
+			</form>
+
+
+			<p>Não tem uma conta? <a href="#">Crie uma aqui</a></p>
+
+			
+		 <div class="jordan">
+				<img src="img/air-jordan-logo-cover-958x575-removebg-preview.png">
+		 </div>
+		</div>
+	     
+		
+	</div>
+	<div class="retangulopreto">
+	</div>
+	<div class="nikeimg1">
+		<img src="img/open-graph-main-image-removebg-preview.png">
+	</div>
+
+
+	<h1>Imagens e JavaScript</h1>
+	<div class="ultima">
+		<img src="img/Jordan zebra.jpg" alt="Imagem 1" width="300" height="200" onclick="ampliarImagem(this)">
+	</div>
+	<div class="container">
+		<img src="img/97img.jpg" alt="Imagem 1" width="300" height="200" onclick="ampliarImagem(this)">
+	</div>
+
+	<div class="gallery">
+		<img src="img/tn1.jpg" alt="Imagem 1" width="300" height="200" class="gallery-image"
+			onclick="ampliarImagem(this)">
+	</div>
+	<div class="ampliada-container">
+		<img src="" alt="Imagem Ampliada" class="ampliada-image">
+	</div>
+
+	<br>
+   
+	<img src="iimg/Jordan11.png" alt="Imagem 1" width="300" height="200" onmouseover="mostrarMensagem('Jordan11')" onmouseout="mostrarMensagem('')">
+
+
+	<div id="mensagem"></div>
+
+
+	<script src="menu.js"></script>
+	<script src="ampliar.js"></script>
+	<script src="ampliar2.js"></script>
+
+	</div>
+
+	<div id="principal">
+
+		<img src="img/IMGPRINCIPAL.jpg">
+
+
+	</div>
+
+
+	<div class="dois">
+
+
+
+	</div>
+
+
+
+	<div class="linha">
+
+	</div>
+
+	<div class="texto">
+		<H1> COLEÇÕES</H1>
+	</div>
+
+
+
+
+	<div class="linhas">
+
+	</div>
+
+
+	<DIV class="peli">
+
+
+	</DIV>
+
+
+
+
+
+	
+
+
+
+
+	<div class="laranja">
+
+		<img src="img/nike laranja.png">
+
+	</div>
+
+
+
+
+
+	<div class="testinho">
+
+		<h1>TECH</h1>
+
+	</div>
+
+	<div class="pelicula">
+
+
+	</div>
+
+	<div class="Imigem">
+
+		<img src="img/nike laranja.png">
+
+	</div>
+
+	<div class="niqui">
+
+		<h1>NOVA TECNOLOGIA DA NIKE UTILIZA A IA COMO SEU PRINCIPAL MODO DE CRIAÇÃO</h1>
+
+
+	</div>
+
+	<div class="pele">
+
+
+
+
+	</div>
+
+	<div class="porte">
+
+		<img src="img/Just do IT.png">
+
+
+	</div>
+
+	<div class="final">
+
+
+
+
+	</div>
+
+
+<div class="one">
+
+<img src="img/nocta branco.png">
+
+
+</div>
+
+<div class="ori">
  
+	<img src="img/Nocta origem.png">
+
+
+</div>
+
+<div class="aa">
+
+<img src="img/nocta letra.png">
+
+</div>
+
+<div class="igui">
+
+<img src="img/nocta logo prateado.png">
+
+</div>
+
+<div class="sorria">
+
+<img src="img/drake sorrindo.png">
+
+</div>
+
+
+<!-- a -->
+<div class="imgg">
+
+	<img src="img/caixas nike.PNG">
+
+
+</div>
+
+
+
+
+<div class="joje">
+
+<img src="img/primeiro jodan.png">
+
+</div>
+
+
+<div class="segunda">
+
+<img src="img/jordan segundo.png">
+
+<h1>AIR JORDAN 4
+	‘CAMALEÃO’</h1>
+
+</div>
+
+<div class="terceira">
+
+<img src="img/jordan terceiro.png">
+
+<h1> AIR JORDAN 4
+	‘FRANCE’</h1>
+
+
+</div>
+
+<div class="mateusgay">
+
+<img src="img/Jordan quarto.png">
+
+
+<h1> AIR JORDAN 4
+	‘AUSTRI’</h1>
+
+</div>
+
+
+
+<div class="agaum">
+
+	<h1>AIR JORDAN 4 ‘LEOPARDO” </h1>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
